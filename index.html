@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Ответ на запрос таможни — за 20 минут, 2 990 ₽</title>
-<meta name="description" content="Загрузите запрос таможни и ДТ — ответ по каждому пункту: какие документы приложить, что делать, если нет экспортной декларации или прайса, опись для отправки. 2 990 ₽. Жалоба на решение о корректировке — 4 990 ₽.">
+<title>Ответ на запрос таможни — за 20 минут</title>
+<meta name="description" content="Загрузите запрос таможни и ДТ — ответ по каждому пункту: какие документы приложить, что делать, если нет экспортной декларации или прайса, опись для отправки. Отдельно — жалоба на решение о корректировке таможенной стоимости.">
 <link rel="icon" href="favicon.svg">
 <link rel="stylesheet" href="style.css">
 <script src="smoke.js" defer></script>
@@ -16,55 +16,53 @@
   <nav class="top">
     <a href="#zapros" data-ev="click_nav_zapros">Запрос таможни</a>
     <a href="#kts" data-ev="click_nav_kts">Жалоба на КТС</a>
-    <a href="#price" data-ev="click_nav_price">Декларантам</a><a href="#start" data-ev="click_nav_start">Начать</a>
+    <a href="price.html#deklarant" data-ev="click_nav_price">Декларантам</a><a href="#start" data-ev="click_nav_start">Начать</a>
   </nav>
 </div></header>
 
 <div class="wrap">
 
   <div class="hero">
-    <h1>Ответ на запрос таможни — за 20 минут, 2 990 ₽</h1>
-    <p class="sub">Загрузите запрос и ДТ — ответ по каждому пункту: какие документы приложить, пояснение, что делать, если нет экспортной декларации или прайса, и опись для отправки. Жалоба на решение о корректировке — отдельно, 4 990 ₽.</p>
-    <a class="cta" href="#zapros" data-ev="cta_click">Ответ на запрос — 2 990 ₽</a>
-    <a class="cta ghost" href="#kts" data-ev="cta_click_new">Жалоба на КТС — 4 990 ₽</a>
+    <h1>Ответ на запрос таможни — за 20 минут</h1>
+    <p class="sub">Загрузите запрос и ДТ — ответ по каждому пункту: какие документы приложить, пояснение, что делать, если нет экспортной декларации или прайса, и опись для отправки. Жалоба на решение о корректировке — отдельной услугой.</p>
+    <a class="cta" href="price.html#zapros" data-ev="cta_click">Мне нужен ответ на запрос</a>
+    <a class="cta ghost" href="price.html#kts" data-ev="cta_click_new">Мне нужна жалоба на КТС</a>
     <p class="cta-note">Сервис в подготовке &middot; Оплата на сайте не подключена, деньги не списываются</p>
   </div>
 
   <section id="zapros" data-view="zapros_view">
-    <h2>1. Ответ на запрос таможни — 2 990 ₽ за запрос</h2>
+    <h2>1. Ответ на запрос таможни</h2>
     <p>Загрузите запрос и ДТ — получите ответ по каждому пункту: какие документы приложить, пояснения со ссылкой на ст. 325 ТК ЕАЭС и опись для отправки.</p>
     <div class="grid">
-      <div class="card"><b>Ответ по каждому пункту</b><span>Что именно просит таможня и чем закрыть каждый пункт запроса.</span><br><a class="btn" href="pay.html?f=punkty" data-ev="feature_punkty">Попробовать</a></div>
-      <div class="card"><b>Если документа нет</b><span>Нет экспортной декларации или прайса продавца — объясняем почему и предлагаем документы на замену.</span><br><a class="btn" href="pay.html?f=zamena" data-ev="feature_zamena">Попробовать</a></div>
-      <div class="card"><b>Опись для отправки</b><span>Перечень приложений для подачи в электронном виде через вашу программу.</span><br><a class="btn" href="pay.html?f=opis" data-ev="feature_opis">Попробовать</a></div>
+      <div class="card"><b>Ответ по каждому пункту</b><span>Что именно просит таможня и чем закрыть каждый пункт запроса.</span><br><a class="btn" href="price.html#zapros" data-ev="feature_punkty">Мне это нужно</a></div>
+      <div class="card"><b>Если документа нет</b><span>Нет экспортной декларации или прайса продавца — объясняем почему и предлагаем документы на замену.</span><br><a class="btn" href="price.html#zapros" data-ev="feature_zamena">Мне это нужно</a></div>
+      <div class="card"><b>Опись для отправки</b><span>Перечень приложений для подачи в электронном виде через вашу программу.</span><br><a class="btn" href="price.html#zapros" data-ev="feature_opis">Мне это нужно</a></div>
     </div>
     <p class="fine" style="margin-top:16px">Пример на вымышленных данных. <b>Пункт 3: экспортная декларация.</b> Если продавец отказал в копии, в ответе так и пишем: копия не передана, вместо неё — письмо продавца об отказе, инвойс, упаковочный лист и банковские документы об оплате.</p>
-    <a class="cta" href="pay.html?plan=zapros" data-ev="payment_click click_pay_zapros">Оплатить ответ — 2 990 ₽</a>
+    <a class="cta" href="price.html#zapros" data-ev="cta_click">Мне нужен ответ на запрос</a>
   </section>
 
   <section id="kts" data-view="kts_view">
-    <h2>2. Жалоба на решение о корректировке (КТС) — 4 990 ₽ за жалобу</h2>
+    <h2>2. Жалоба на решение о корректировке (КТС)</h2>
     <p>Загрузите решение о КТС, ДТ и контракт — получите жалобу в вышестоящую таможню: довод по каждому основанию решения со ссылкой на ст. 39–45 ТК ЕАЭС, расчёт суммы к возврату по каждому товару и опись приложений.</p>
     <div class="grid">
-      <div class="card"><b>Довод по каждому основанию</b><span>Каждое основание решения разобрано отдельно, со ссылкой на нормы о методах определения таможенной стоимости.</span><br><a class="btn" href="pay.html?f=kts_dovody" data-ev="feature_kts_dovody">Попробовать</a></div>
-      <div class="card"><b>Сумма к возврату</b><span>Сколько доплачено после корректировки и что вернуть — по каждому товару.</span><br><a class="btn" href="pay.html?f=kts_vozvrat" data-ev="feature_kts_vozvrat">Попробовать</a></div>
-      <div class="card"><b>Готово к подаче</b><span>Текст в Word и PDF. Срок жалобы сверьте по тексту решения и по закону — дата на этой странице его не заменяет.</span><br><a class="btn" href="pay.html?f=kts_podacha" data-ev="feature_kts_podacha">Попробовать</a></div>
+      <div class="card"><b>Довод по каждому основанию</b><span>Каждое основание решения разобрано отдельно, со ссылкой на нормы о методах определения таможенной стоимости.</span><br><a class="btn" href="price.html#kts" data-ev="feature_kts_dovody">Мне это нужно</a></div>
+      <div class="card"><b>Сумма к возврату</b><span>Сколько доплачено после корректировки и что вернуть — по каждому товару.</span><br><a class="btn" href="price.html#kts" data-ev="feature_kts_vozvrat">Мне это нужно</a></div>
+      <div class="card"><b>Готово к подаче</b><span>Текст в Word и PDF. Срок жалобы сверьте по тексту решения и по закону — дата на этой странице его не заменяет.</span><br><a class="btn" href="price.html#kts" data-ev="feature_kts_podacha">Мне это нужно</a></div>
     </div>
-    <a class="cta" href="pay.html?plan=kts" data-ev="payment_click_new click_pay_kts">Оплатить жалобу — 4 990 ₽</a>
+    <a class="cta" href="price.html#kts" data-ev="cta_click_new">Мне нужна жалоба на КТС</a>
   </section>
 
-  <section id="price" data-view="price_view">
+  <section id="deklarant">
     <h2>Специалистам по ВЭД и декларантам</h2>
-    <div class="grid">
-      <div class="card"><b>Ответы на запросы</b><span>9 900 ₽ в месяц, до 10 ответов.</span><br><a class="btn" href="pay.html?plan=deklarant_zapros" data-ev="payment_click click_pay_deklarant_zapros">Оплатить 9 900 ₽ в месяц</a></div>
-      <div class="card"><b>Жалобы на КТС</b><span>14 900 ₽ в месяц, до 5 жалоб.</span><br><a class="btn" href="pay.html?plan=deklarant_kts" data-ev="payment_click_new click_pay_deklarant_kts">Оплатить 14 900 ₽ в месяц</a></div>
-    </div>
+    <p>Если запросы и решения о КТС приходят регулярно — пакет ответов или жалоб в месяц.</p>
+    <a class="cta ghost" href="price.html#deklarant" data-ev="cta_click">Мне нужен пакет для декларанта</a>
   </section>
 
   <section id="start" data-view="start_view">
     <h2>Загрузить документ таможни</h2>
     <p><label>Что пришло от таможни<br><select data-ev-focus="form_start" style="margin-top:6px;padding:8px;font-size:16px"><option value="">— выберите —</option><option>Запрос документов</option><option>Решение о корректировке (КТС)</option></select></label></p>
-    <a class="cta" href="pay.html?intent=dokument" data-ev="form_submit_click">Загрузить запрос или решение</a>
+    <a class="cta" href="price.html" data-ev="form_submit_click">Загрузить запрос или решение</a>
   </section>
 </div>
 

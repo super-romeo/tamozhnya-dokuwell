@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Цена — ответ на запрос таможни и жалоба на КТС</title>
+<meta name="description" content="Цена ответа на запрос таможни и жалобы на решение о корректировке таможенной стоимости; пакеты для специалистов по ВЭД и декларантов.">
+<link rel="icon" href="favicon.svg">
+<link rel="stylesheet" href="style.css">
+<script src="smoke.js" defer></script>
+<script>
+  /* Показ экрана цен — price_view через штатную точку события smoke.js (window.smokeTrack).
+     smoke.js подключён с defer и выполняется до DOMContentLoaded. */
+  document.addEventListener("DOMContentLoaded", function () { if (window.smokeTrack) window.smokeTrack("price_view"); });
+</script>
+</head>
+<body data-page="price">
+
+<header><div class="wrap">
+  <div class="logo"><a href="index.html" data-ev="click_logo_home">ОтветТаможне</a></div>
+  <nav class="top">
+    <a href="index.html#zapros" data-ev="click_nav_zapros">Запрос таможни</a>
+    <a href="index.html#kts" data-ev="click_nav_kts">Жалоба на КТС</a>
+    <a href="#deklarant" data-ev="click_nav_price">Декларантам</a>
+  </nav>
+</div></header>
+
+<div class="wrap">
+
+  <div class="hero">
+    <h1>Цена</h1>
+    <p class="sub">Ответ на запрос таможни по каждому пункту и жалоба на решение о корректировке таможенной стоимости — разово или пакетом в месяц.</p>
+  </div>
+
+  <section id="razovo">
+    <h2>Разовый документ</h2>
+    <div class="grid">
+      <div class="card" id="zapros"><b>Ответ на запрос таможни</b><span>2 990 ₽ за запрос.</span><br><a class="btn" href="pay.html?plan=zapros" data-ev="payment_click click_pay_zapros">Оплатить ответ — 2 990 ₽</a></div>
+      <div class="card" id="kts"><b>Жалоба на решение о корректировке (КТС)</b><span>4 990 ₽ за жалобу.</span><br><a class="btn" href="pay.html?plan=kts" data-ev="payment_click_new click_pay_kts">Оплатить жалобу — 4 990 ₽</a></div>
+    </div>
+  </section>
+
+  <section id="deklarant">
+    <h2>Специалистам по ВЭД и декларантам</h2>
+    <div class="grid">
+      <div class="card"><b>Ответы на запросы</b><span>9 900 ₽ в месяц, до 10 ответов.</span><br><a class="btn" href="pay.html?plan=deklarant_zapros" data-ev="payment_click click_pay_deklarant_zapros">Оплатить 9 900 ₽ в месяц</a></div>
+      <div class="card"><b>Жалобы на КТС</b><span>14 900 ₽ в месяц, до 5 жалоб.</span><br><a class="btn" href="pay.html?plan=deklarant_kts" data-ev="payment_click_new click_pay_deklarant_kts">Оплатить 14 900 ₽ в месяц</a></div>
+    </div>
+    <p class="cta-note">Сервис в подготовке &middot; Оплата на сайте не подключена, деньги не списываются</p>
+    <div class="actions"><a class="btn" href="index.html" data-ev="click_back">Вернуться к описанию</a></div>
+  </section>
+</div>
+
+<footer><div class="wrap">
+  <p>Оператор: ИП Гудев Роман, ИНН 615007167949 &middot; <a href="privacy.html" data-ev="click_legal_privacy">Политика обработки персональных данных</a></p>
+  <p class="muted">Мы не являемся таможенным органом или таможенным представителем и не действуем от их имени. Подготовка документа — справочно-аналитическая услуга; решение о подаче и ответственность за сведения остаются за декларантом.</p>
+</div></footer>
+
+<div id="consent" hidden>Сайт использует cookie Яндекс Метрики, чтобы считать, какими кнопками пользуются. <button data-consent="yes">Согласен</button><button data-consent="no">Отказаться</button></div>
+</body>
+</html>
